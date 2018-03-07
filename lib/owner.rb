@@ -45,6 +45,9 @@ class Owner
   def self.reset_all
     @@all =[]
   end
+  def list_pets
+    @pets.each{|type,name| puts name}
+  end 
 
 
 
