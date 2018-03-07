@@ -46,7 +46,8 @@ class Owner
     @@all =[]
   end
   def list_pets
-    @pets.each{|type,name| puts name}
+    @pets[:fishes] 
+    "I have #{@pets[fishes].length} fish, #{@pets[dogs].length} dog(s), and #{@pets[cats].length} cat(s)."
   end 
 
 
