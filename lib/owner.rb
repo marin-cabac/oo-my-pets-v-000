@@ -9,10 +9,10 @@ class Owner
   end
   def self.count
     all.size
-  end 
+  end
   def initialize(species)
       @pets= {:fishes => [], :cats =>[], :dogs =>[]}
-    @@all << self
+    all << self
     @species=species
     @@count+=1
   end
