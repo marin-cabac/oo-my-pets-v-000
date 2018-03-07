@@ -46,7 +46,7 @@ class Owner
       @pets.map{|type,names|names.clear}
    end
   def self.reset_all
-    @@all =[]
+    all =[]
     @@count=0
   end
   def list_pets
