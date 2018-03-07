@@ -39,7 +39,8 @@ class Owner
     @pets[:fishes].each{|f|f.mood="happy"}
   end
   def sell_pets
-     @pets={:fishes => [], :cats =>[], :dogs =>[]}
+      @pets.each{|type,name|name.each{|pet|pet.mood="nervous"}}
+      @pets.map{|type,names|names.clear}
    end
   def self.reset_all
     @@all =[]
