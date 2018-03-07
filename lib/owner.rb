@@ -7,7 +7,7 @@ class Owner
   def self.all
     @all
   end
-  def self.count 
+  def self.count
     @@all.size
   end 
   def initialize(species)
